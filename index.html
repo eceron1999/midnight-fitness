@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Midnight Fitness</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="navbar__container container">
+            <!-- LOGO -->
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__logo-link" aria-label="Midnight Fitness Home">
+                    <div class="navbar__logo-title">
+                        <span class="navbar__logo-title-cyan">Midnight</span> Fitness
+                    </div>
+                </a>
+            </div>
+            
+            <div class="navbar__menu">
+                <ul class="navbar__menu-list" aria-label="Navigation Links">
+                    <li class="navbar__menu-item">
+                        <a href="index.html" class="navbar__menu-link">Home</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="index.html#training" class="navbar__menu-link">Training</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="index.html#amenities" class="navbar__menu-link">Amenities</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="index.html#stats" class="navbar__menu-link">Stats</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="index.html#memberships" class="navbar__menu-link navbar__memberships-btn">
+                            Memberships
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- MOBILE MENU & HAMBURGER ICON-->
+            <div class="navbar__mobile-menu">
+                <div class="navbar__mobile-menu-toggle" role="button" aria-expanded="false" aria-controls="navbar__mobile-menu-items" aria-label="Open mobile menu" tabindex="0">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+                <!-- MOBILE MENU ITEMS -->
+                 <div class="navbar__mobile-menu-items">
+                    <ul class="navbar__mobile-menu-list" aria-label="Navigation Links">
+                        <li class="navbar__mobile-menu-item">
+                            <a href="index.html" class="navbar__mobile-menu-link">Home</a>
+                        </li>
+                        <li class="navbar__mobile-menu-item">
+                            <a href="index.html#training" class="navbar__mobile-menu-link">Training</a>
+                        </li>
+                        <li class="navbar__mobile-menu-item">
+                            <a href="index.html#amenities" class="navbar__mobile-menu-link">Amenities</a>
+                        </li>
+                        <li class="navbar__mobile-menu-item">
+                            <a href="index.html#stats" class="navbar__mobile-menu-link">Stats</a>
+                        </li>
+                        <li class="navbar__mobile-menu-item">
+                            <a href="index.html#memberships" class="navbar__mobile-menu-link navbar__memberships-btn">
+                            Memberships
+                            </a>
+                        </li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+     <header class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Own the night. Dominate the day.
+                </h1>
+                <p class="hero__description">
+                    Raleigh's premier <span class="hero__description-cyan">24/7</span> underground iron sanctuary. Built for competitive powerlifting, hybrid athletic conditioning, and unfiltered performance.
+                </p>
+                <div class="hero__buttons">
+                    <a href="signup.html" class="hero__button btn">Join The Sanctuary</a>
+                    <a href="#training" class="hero__button btn">Explore Facility</a>
+                </div>
+            </div>
+            <!-- HERO BAR -->
+            <div class="hero__bar">
+                <div class="hero__bar-container container">
+                    <!-- PILLAR 1 -->
+                    <div class="hero__pillar">
+                        <i class="fa-solid fa-key" aria-hidden="true"></i>
+                        <h3 class="hero__pillar-title">
+                            24/7 Keycard Access
+                        </h3>
+                        <p class="hero__pillar-description">
+                            Train on your clock. Zero restrictions, 365 days a year.
+                        </p>
+                    </div>
+                    <!-- PILLAR 2 -->
+                    <div class="hero__pillar">
+                        <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+                        <h3 class="hero__pillar-title">
+                            Elite Iron Warehouse
+                        </h3>
+                        <p class="hero__pillar-description">
+                            Calibrated plates, competition racks, and specialized turf lines.
+                        </p>
+                    </div>
+                    <!-- PILLAR 3 -->
+                    <div class="hero__pillar">
+                        <i class="fa-solid fa-user-shield" aria-hidden="true"></i>
+                        <h3 class="hero__pillar-title">
+                            Secure Sanctuary
+                        </h3>
+                        <p class="hero__pillar-description">
+                            High-definition surveillance and premium private facilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </header>
+
+    <!-- TRAINING SECTION -->
+     <section class="training section" id="training">
+        <div class="training__container container">
+            <h2 class="training__title section-header">
+                Our Training Grounds
+            </h2>
+            <div class="training__cards">
+                <!-- CARD 1 -->
+                <div class="training__card training__card-1">
+                    <h3 class="training__card-title">
+                        The Iron Chapel
+                    </h3>
+                    <p class="training__card-description">
+                        Competitive Powerlifting
+                    </p>
+                    <ul class="training__card-list" aria-label="Equipment and features">
+                        <li class="training__card-item">
+                            <i class="fa-solid fa-weight-hanging"></i> <span class="training__card-bold-text">USAPL/IPL Spec:</span> Competition-grade combos racks and monoliths.
+                        </li>
+                        <li class="training__card-item">
+                            <i class="fa-solid fa-weight-hanging"></i> <span class="training__card-bold-text">Precision Loading:</span> Full sets of calibrated steel plates and specialty bars.
+                        </li>
+                        <li class="training__card-item">
+                            <i class="fa-solid fa-weight-hanging"></i> <span class="training__card-bold-text">Deadlift Den:</span> Dedicated platforms with aggressive knurling bars.
+                        </li>
+                        <li class="training__card-item">
+                            <i class="fa-solid fa-weight-hanging"></i> <span class="training__card-bold-text">The Standard:</span> Chalk-friendly, high-decibel environment.
+                        </li>
+                    </ul>
+                </div>
+                <!-- CARD 2 -->
+                <div class="training__card training__card-2">
+                    <h3 class="training__card-title">
+                        The Engine Room
+                    </h3>
+                    <p class="training__card-description">
+                        Functional Conditioning
+                    </p>
+                    <ul class="training__card-list" aria-label="Equipment and features">
+                        <li class="training__card-item">
+                            <i class="fa-solid fa-bolt"></i> <span class="training__card-bold-text">The Strip:</span> 40 yards of premium indoor turf for sled work and sprints.
+                        </li>
+                        <li class="training__card-item">
+                            <i class="fa-solid fa-bolt"></i> <span class="training__card-bold-text">Explosive Tools:</span> Rogue Echo bikes, Concept2 rowers, and plyo boxes.
+                        </li>
+                        <li class="training__card-item">
+                            <i class="fa-solid fa-bolt"></i> <span class="training__card-bold-text">Odd Objects:</span> Atlas stones, sandbags, and tractor tires.
+                        </li>    
+                        <li class="training__card-item">
+                            <i class="fa-solid fa-bolt"></i> <span class="training__card-bold-text">Agility Hub:</span> Wall balls and kettleball racks up to 100lbs.
+                        </li>
+                    </ul>
+                </div>
+                <!-- CARD 3 -->
+                <div class="training__card training__card-3">
+                    <h3 class="training__card-title">
+                        The Sculpt Lab
+                    </h3>
+                    <p class="training__card-description">
+                        Modern Bodybuilding
+                    </p>
+                    <ul class="training__card-list" aria-label="Equipment and features">
+                        <li class="training__card-item">
+                            <i class="fa-solid fa-dna"></i> <span class="training__card-bold-text">Mechanical Tension:</span> Prime, Arsenal Strength, and Cybex plate-loaded lines.
+                        </li>
+                        <li class="training__card-item">
+                            <i class="fa-solid fa-dna"></i> <span class="training__card-bold-text">Isolation Row:</span> Full cable jungle with custom attachments.
+                        </li>
+                        <li class="training__card-item">
+                            <i class="fa-solid fa-dna"></i> <span class="training__card-bold-text">Dumbbell Range:</span> Custom iron sets ranging from 5lbs to 150lbs.
+                        </li>
+                        <li class="training__card-item">
+                            <i class="fa-solid fa-dna"></i> <span class="training__card-bold-text">Mind-Muscle:</span> Specialized lighting designed to track every muscle fiber.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- AMENITIES -->
+     <section class="amenities section" id="amenities">
+        <div class="amenities__container container">
+            <h2 class="amenities__title section-header">
+                Recalibrate & Recover
+            </h2>
+            <div class="amenities__grid">
+                <!-- SAUNA -->
+                <div class="amenities__grid-image">
+                    <img src="images/sauna.jpg" alt="Sauna">
+                </div>
+                <div class="amenities__grid-content">
+                    <h3 class="amenities__grid-title">The Infrared Sanctuary</h3>
+                    <h4 class="amenities__grid-sub-title">Deep-tissue restoration for the modern athlete.</h4>
+                    <p class="amenities__grid-description">
+                        Our infrared vault utilizes full-spectrum heat to penetrate the dermis, warming the body's core rather than just the ambient air. This precision thermal exposure triggers a cascade of biological benefits:
+                    </p>
+                    <ul class="amenities__grid-list" aria-label="Health benefits">
+                        <li class="amenities__grid-list-item">
+                            <span class="amenities__grid-list-item-bold">Vascular Expansion:</span> Enhances blood flow to oxygen-depleted muscle fibers.
+                        </li>
+                        <li class="amenities__sauna-list-item">
+                            <span class="amenities__grid-list-item-bold">Mitochondrial Stimuli:</span> Accelerates cellular repair and reduces systemic inflammation.
+                        </li>
+                        <li class="amenities__grid-list-item">
+                            <span class="amenities__grid-list-item-bold">Nervous System Reset:</span> Shifts the body from 'Fight or Flight' into a parasympathetic recovery state.
+                        </li>
+                    </ul>
+                </div>
+                <!-- COLD PLUNGE -->
+                <div class="amenities__grid-content amenities__grid-content-cold-plunge">
+                     <h3 class="amenities__grid-title amenities__grid-title-cold-plunge">The Arctic Plunge</h3>
+                    <h4 class="amenities__grid-sub-title">Neurological resilience for the high-performance pursuit</h4>
+                    <p class="amenities__grid-description">
+                        Our arctic plunge suite features constant-circulation basins maintained at a precise 4&deg;C. By utilizing deliberate cold exposure, you trigger an immediate vascular flush and a cascade of biological benefits:
+                    </p>
+                    <ul class="amenities__grid-list amenities__grid-list-cold-plunge" aria-label="Health benefits">
+                        <li class="amenities__grid-list-item">
+                            <span class="amenities__grid-list-item-bold">Vascular Resilience:</span> Forces rapid vasoconstriction to flush metabolic waste from muscle tissue.
+                        </li>
+                        <li class="amenities__grid-list-item">
+                            <span class="amenities__grid-list-item-bold">Hormonal Optimization:</span> Boosts dopamine and regulates cortisol levels for improved mood and sleep.
+                        </li>
+                        <li class="amenities__sauna-list-item">
+                            <span class="amenities__grid-list-item-bold">Advanced Filtration:</span> Industrial-grade ozone and UV sterilization for uncompromising water purity.
+                        </li>
+                    </ul>
+                </div>
+                <div class="amenities__grid-image amenities__grid-image-cold-plunge">
+                    <img src="images/Cold plunge-zoomed.jpeg" alt="Cold plunge">
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- STATS -->
+      <section class="stats section" id="stats">
+        <div class="stats__container container">
+            <h2 class="stats__title section-header">
+                By The Numbers
+            </h2>
+            <p class="stats__description">
+                We don't guess; we quantify. Midnight Fitness is engineered from the ground up to provide the exact spatial scale, elite coaching metrics, and absolute accessibility required by high-performance athletes.
+            </p>
+            <div class="stats__numbers-container">
+                <div class="stats__numbers-item">
+                    <h3 class="stats__numbers-stat">
+                        12,000 lbs
+                    </h3>
+                    <p class="stats__numbers-label">
+                        Free-Weight Capacity
+                    </p>
+                </div>
+                <div class="stats__numbers-item">
+                    <h3 class="stats__numbers-stat">
+                        25,000 sq ft
+                    </h3>
+                    <p class="stats__numbers-label">
+                        Architectural Training Footprint
+                    </p>
+                </div>
+                <div class="stats__numbers-item">
+                    <h3 class="stats__numbers-stat">
+                        1:10
+                    </h3>
+                    <p class="stats__numbers-label">
+                        Coach-to-Athlete Ratio
+                    </p>
+                </div>
+                <div class="stats__numbers-item">
+                    <h3 class="stats__numbers-stat">
+                        24/7/365
+                    </h3>
+                    <p class="stats__numbers-label">
+                        Uninterrupted Access Baseline
+                    </p>
+                </div>
+            </div>
+            <div class="stats__button btn">
+                <a href="#memberships">Explore Memberships</a>
+            </div>
+        </div>
+      </section>
+
+      <!-- MEMBERSHIPS -->
+       <section class="memberships section" id="memberships">
+        <div class="memberships__container container">
+            <h2 class="memberships__title section-header">
+                Choose Your Tier
+            </h2>
+            <p class="memberships__description">
+                Uncompromised access to elite infrastructure. Select the tier engineered for your training volume, recovery demands, and competitive objectives.
+            </p>
+            <div class="memberships__cards-container">
+                <!-- CARD 1 -->
+                <a href="signup.html" class="memberships__cards-link">
+                    <div class="memberships__card">
+                        <h3 class="memberships__card-header">
+                            Standard Tier
+                        </h3>
+                        <h4 class="memberships__card-sub-header">
+                            Essential Iron
+                        </h4>
+                        <p class="memberships__card-price">
+                            <sup>$</sup>50<sub>/mo</sub>
+                        </p>
+                        <div class="memberships__card-divider"></div>
+                        <ul class="memberships__card-list" aria-label="Included Midnight tier membership features">
+                            <li class="memberships__card-item">
+                                <i class="fa-solid fa-check"></i> Full access to our Training Grounds
+                            </li>
+                            <li class="memberships__card-item">
+                                <i class="fa-solid fa-check"></i> Full locker room & shower entry
+                            </li>
+                            <li class="memberships__card-item">
+                                <i class="fa-solid fa-check"></i> 24/7/365 Uninterrupted access
+                            </li>
+                            <li class="memberships__card-item">
+                                <i class="fa-solid fa-check"></i> Access to all locations
+                            </li>
+                        </ul>
+                        <p class="memberships__card-subtext">
+                            Billed monthly. Zero hidden fees.
+                        </p>
+                    </div>
+                </a>
+                <!-- CARD 2 -->
+                <a href="signup.html" class="memberships__cards-link memberships__cards-link-midnight">
+                    <div class="memberships__card memberships__card-midnight">
+                        <h3 class="memberships__card-header">
+                            Midnight Tier
+                        </h3>
+                        <h4 class="memberships__card-sub-header">
+                            The Absolute Standard
+                        </h4>
+                        <p class="memberships__card-price">
+                            <sup>$</sup>70<sub>/mo</sub>
+                        </p>
+                        <div class="memberships__card-divider"></div>
+                        <ul class="memberships__card-list" aria-label="Included Midnight tier membership features">
+                            <li class="memberships__card-item">
+                                <i class="fa-solid fa-check"></i> All standard features
+                            </li>
+                            <li class="memberships__card-item">
+                                <i class="fa-solid fa-check"></i> Full access to sauna & cold plunge
+                            </li>
+                            <li class="memberships__card-item">
+                                <i class="fa-solid fa-check"></i> 2 guest passes per month
+                            </li>
+                            <li class="memberships__card-item">
+                                <i class="fa-solid fa-check"></i> Exclusive locker storage
+                            </li>
+                        </ul>
+                        <p class="memberships__card-subtext">
+                            Our most demanding tier. Cancel anytime.
+                        </p>
+                    </div>
+                </a>
+                <!-- CARD 3 -->
+                <a href="signup.html" class="memberships__cards-link">
+                    <div class="memberships__card">
+                        <h3 class="memberships__card-header">
+                            Executive Tier
+                        </h3>
+                        <h4 class="memberships__card-sub-header">
+                            Zero Restraints
+                        </h4>
+                        <p class="memberships__card-price">
+                            <sup>$</sup>90<sub>/mo</sub>
+                        </p>
+                        <div class="memberships__card-divider"></div>
+                        <ul class="memberships__card-list" aria-label="Included Midnight tier membership features">
+                            <li class="memberships__card-item">
+                                <i class="fa-solid fa-check"></i> Everything included in Midnight Tier
+                            </li>
+                            <li class="memberships__card-item">
+                                <i class="fa-solid fa-check"></i> Unlimited guest passes
+                            </li>
+                            <li class="memberships__card-item">
+                                <i class="fa-solid fa-check"></i> Monthly personal trainer
+                            </li>
+                            <li class="memberships__card-item">
+                                <i class="fa-solid fa-check"></i> Direct concierge coach line  
+                            </li>
+                        </ul>
+                        <p class="memberships__card-subtext">
+                            Limited availibility. Caps enforced.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+       </section>
+
+       <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer__container container">
+                <!-- MAIN CONTENT -->
+                <div class="footer__main-content">
+                    <!-- COLUMN 1 -->
+                    <div class="footer__col footer__col-1">
+                        <div class="footer__logo">
+                            <a href="index.html" class="footer__logo-link" aria-label="Midnight Fitness Home">
+                                <div class="navbar__logo-title footer__logo-title">
+                                    <span class="navbar__logo-title-cyan">Midnight</span> Fitness
+                                </div>
+                            </a>
+                        </div>
+                        <p class="footer__statement">
+                            Forging elite hybrid athletes through relentless training, unbreakable discipline, and premium coaching.
+                        </p>
+                    </div>
+
+                    <!-- COLUMN 2 -->
+                    <div class="footer__col footer__col-2">
+                        <h3 class="footer__col-2-header">
+                            Quick Links
+                        </h3>
+                        <div class="footer__menu">
+                            <ul class="footer__menu-list" aria-label="Navigation Links">
+                                <li class="footer__menu-item">
+                                    <a href="index.html" class="footer__menu-link">Home</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="index.html#training" class="footer__menu-link">Training</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="index.html#amenities" class="footer__menu-link">Amenities</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="index.html#stats" class="footer__menu-link">Stats</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="index.html#memberships" class="footer__menu-link">
+                                        Memberships
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- COLUMN 3 -->
+                    <div class="footer__col footer__col-3">
+                        <div class="footer__icons">
+                            <a href="" class="footer__icon">
+                                <i class="fa-brands fa-facebook fa-2x"></i>
+                            </a>
+                            <a href="" class="footer__icon">
+                                <i class="fa-brands fa-instagram fa-2x"></i>
+                            </a>
+                            <a href="" class="footer__icon">
+                                <i class="fa-brands fa-tiktok fa-2x"></i>
+                            </a>
+                            <a href="" class="footer__icon">
+                                <i class="fa-brands fa-twitter fa-2x"></i>
+                            </a>
+                            <a href="" class="footer__icon">
+                                <i class="fa-brands fa-youtube fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- COLUMN 4 -->
+                     <div class="footer__col footer__col-4">
+                        <h3 class="footer__location">
+                            Location
+                        </h3>
+                        <p class="footer__address">
+                            510 S. West Street
+                            <br> 
+                            Suite 100 
+                            <br>
+                            Raleigh, NC 27601
+                        </p>
+                     </div>
+                </div>
+                <!-- BORDER -->
+                <div class="footer__border"></div>
+                <!-- BASELINE -->
+                <div class="footer__baseline">
+                    <div class="footer__copyright">
+                        <p class="footer__copyright-text">
+                            &copy; 2026 Midnight Fitness. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="footer__legal-links">
+                        <a href="#" class="footer__legal-link">
+                            Privacy Policy
+                        </a>
+                        <a href="#" class="footer__legal-link">
+                            Terms of Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

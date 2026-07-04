@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Midnight Fitness | Sign Up</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="navbar__container container">
+            <!-- LOGO -->
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__logo-link" aria-label="Midnight Fitness Home">
+                    <div class="navbar__logo-title">
+                        <span class="navbar__logo-title-cyan">Midnight</span> Fitness
+                    </div>
+                </a>
+            </div>
+            
+            <div class="navbar__menu">
+                <ul class="navbar__menu-list" aria-label="Navigation Links">
+                    <li class="navbar__menu-item">
+                        <a href="index.html" class="navbar__menu-link">Home</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="index.html#training" class="navbar__menu-link">Training</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="index.html#amenities" class="navbar__menu-link">Amenities</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="index.html#stats" class="navbar__menu-link">Stats</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="index.html#memberships" class="navbar__menu-link navbar__memberships-btn">
+                            Memberships
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- MOBILE MENU & HAMBURGER ICON-->
+            <div class="navbar__mobile-menu">
+                <div class="navbar__mobile-menu-toggle" role="button" aria-expanded="false" aria-controls="navbar__mobile-menu-items" aria-label="Open mobile menu" tabindex="0">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+                <!-- MOBILE MENU ITEMS -->
+                 <div class="navbar__mobile-menu-items">
+                    <ul class="navbar__mobile-menu-list" aria-label="Navigation Links">
+                        <li class="navbar__mobile-menu-item">
+                            <a href="index.html" class="navbar__mobile-menu-link">Home</a>
+                        </li>
+                        <li class="navbar__mobile-menu-item">
+                            <a href="index.html#training" class="navbar__mobile-menu-link">Training</a>
+                        </li>
+                        <li class="navbar__mobile-menu-item">
+                            <a href="index.html#amenities" class="navbar__mobile-menu-link">Amenities</a>
+                        </li>
+                        <li class="navbar__mobile-menu-item">
+                            <a href="index.html#stats" class="navbar__mobile-menu-link">Stats</a>
+                        </li>
+                        <li class="navbar__mobile-menu-item">
+                            <a href="index.html#memberships" class="navbar__mobile-menu-link navbar__memberships-btn">
+                            Memberships
+                            </a>
+                        </li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SIGN UP -->
+    <main class="signup">
+        <div class="signup__container">
+            <div class="signup__form-container">
+                <h2 class="signup__form-header">
+                    Sign Up Now
+                </h2>
+                <p class="signup__form-subheader">
+                    Join 1,200+ elite Raleigh athletes training for peak performance.
+                </p>
+
+                <form class="signup__form">
+                    <div class="signup__form-input">
+                        <input type="text" name="name" id="name" placeholder="Full Name*" required>
+                    </div>
+                    <div class="signup__form-input">
+                        <input type="tel" name="number" id="number" placeholder="Phone Number*" required>
+                    </div>
+                    <div class="signup__form-input">
+                        <input type="email" name="email" id="email" placeholder="Email*" required>
+                    </div>
+                    <div class="signup__form-input">
+                        <input type="password" name="password" id="password" placeholder="Password*" required>
+                    </div>
+                    <button type="submit" class="signup__form-btn btn">Join Now</button>
+                    <p class="signup__form-footer">
+                        Already a member?
+                        <a href="#" class="signup__form-footer-link">Log In</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <!-- MAIN CONTENT -->
+            <div class="footer__main-content">
+                <!-- COLUMN 1 -->
+                <div class="footer__col footer__col-1">
+                    <div class="footer__logo">
+                        <a href="index.html" class="footer__logo-link" aria-label="Midnight Fitness Home">
+                            <div class="navbar__logo-title footer__logo-title">
+                                <span class="navbar__logo-title-cyan">Midnight</span> Fitness
+                            </div>
+                        </a>
+                    </div>
+                    <p class="footer__statement">
+                        Forging elite hybrid athletes through relentless training, unbreakable discipline, and premium coaching.
+                    </p>
+                </div>
+
+                <!-- COLUMN 2 -->
+                <div class="footer__col footer__col-2">
+                    <h3 class="footer__col-2-header">
+                        Quick Links
+                    </h3>
+                    <div class="footer__menu">
+                        <ul class="footer__menu-list" aria-label="Navigation Links">
+                            <li class="footer__menu-item">
+                                <a href="index.html" class="footer__menu-link">Home</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="index.html#training" class="footer__menu-link">Training</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="index.html#amenities" class="footer__menu-link">Amenities</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="index.html#stats" class="footer__menu-link">Stats</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="index.html#memberships" class="footer__menu-link">
+                                    Memberships
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- COLUMN 3 -->
+                <div class="footer__col footer__col-3">
+                    <div class="footer__icons">
+                        <a href="" class="footer__icon">
+                            <i class="fa-brands fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="" class="footer__icon">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="" class="footer__icon">
+                            <i class="fa-brands fa-tiktok fa-2x"></i>
+                        </a>
+                        <a href="" class="footer__icon">
+                            <i class="fa-brands fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="" class="footer__icon">
+                            <i class="fa-brands fa-youtube fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- COLUMN 4 -->
+                    <div class="footer__col footer__col-4">
+                    <h3 class="footer__location">
+                        Location
+                    </h3>
+                    <p class="footer__address">
+                        510 S. West Street
+                        <br> 
+                        Suite 100 
+                        <br>
+                        Raleigh, NC 27601
+                    </p>
+                 </div>
+            </div>
+            <!-- BORDER -->
+            <div class="footer__border"></div>
+            <!-- BASELINE -->
+            <div class="footer__baseline">
+                <div class="footer__copyright">
+                    <p class="footer__copyright-text">
+                        &copy; 2026 Midnight Fitness. All rights reserved.
+                    </p>
+                </div>
+                <div class="footer__legal-links">
+                    <a href="#" class="footer__legal-link">
+                        Privacy Policy
+                    </a>
+                    <a href="#" class="footer__legal-link">
+                        Terms of Service
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
